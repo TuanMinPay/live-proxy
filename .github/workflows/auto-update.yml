@@ -1,0 +1,73 @@
+name: Live Proxy Updater
+
+on:
+  schedule:
+    - cron: "0 */1 * * *"
+
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [16.x]
+
+    steps:
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+      - uses: actions/checkout@v3
+
+      - run: rm *.txt -rfv
+      - name: start proxy scraper
+        run: |
+          cd .github/workflows
+          npm ci
+          node index.js
+      - name: generating README.md
+        run: |
+          echo -e "<div align=\"center\">\n" > README.md
+          echo -e "# live-proxy\n" >> README.md
+          echo -e "  [![tuanminpay - live-proxy](https://img.shields.io/static/v1?label=tuanminpay&message=live-proxy&color=blue&logo=github)](https://github.com/tuanminpay/live-proxy \"Go to GitHub repo\")" >> README.md
+          echo -e "  [![stars - live-proxy](https://img.shields.io/github/stars/tuanminpay/live-proxy?style=social)](https://github.com/tuanminpay/live-proxy)" >> README.md
+          echo -e "  [![forks - live-proxy](https://img.shields.io/github/forks/tuanminpay/live-proxy?style=social)](https://github.com/tuanminpay/live-proxy)\n" >> README.md
+
+          echo -e "  [![Live Proxy Updater](https://github.com/tuanminpay/live-proxy/workflows/Live%20Proxy%20Updater/badge.svg)](https://github.com/tuanminpay/live-proxy/actions?query=workflow:\"Live+Proxy+Updater\")" >> README.md
+          echo -e "  ![GitHub repo size](https://img.shields.io/github/repo-size/tuanminpay/live-proxy)" >> README.md
+          echo -e "  [![GitHub commit activity](https://img.shields.io/github/commit-activity/m/tuanminpay/live-proxy?logo=commits)](https://github.com/tuanminpay/live-proxy/commits/main)" >> README.md
+
+          echo -e "\n  This is a repository I created to make it easier for me and possibly for you to find a proxy.\n" >> README.md
+          echo -e "\n</div>\n" >> README.md
+
+          echo -e "---" >> README.md
+          echo -e "  - **Total proxy:** ±$(cat all.txt | wc -l)" >> README.md
+          echo -e "  - **Last update:** $(TZ=Asia/Jakarta date +'%a, %d %b %y %T %Z')\n" >> README.md
+
+          echo -e "#### Download" >> README.md
+          echo -e "  Copy and paste one of the codes below into the terminal." >> README.md
+
+          for file in *.txt;
+          do
+            echo -e "  - **$(echo $file | cut -d'.' -f1 | tr 'a-z' 'A-Z')** ($(cat $file | wc -l))" >> README.md
+            echo -e "    \`\`\`bash" >> README.md
+            echo -e "    curl https://raw.githubusercontent.com/tuanminpay/live-proxy/main/$file -o $file" >> README.md
+            echo -e "    \`\`\`" >> README.md
+          done
+
+          echo -e "\n#### Note" >> README.md
+          echo -e "Don't forget to give ⭐ and also fork and follow 🥰." >> README.md
+
+      - name: start commit
+        run: |
+          git config --local user.name ${{ secrets.name }}
+          git config --local user.email ${{ secrets.email }}
+          git status
+          git add *.txt README.md
+          git commit -m "update: $(cat all.txt | wc -l) proxies"
+      - name: push changes
+        uses: ad-m/github-push-action@master
+        with: 
+         github_token: ${{ secrets.TOKEN }}
+         force: true
