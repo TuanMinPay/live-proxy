@@ -36,7 +36,7 @@ jobs:
 
           echo -e "  [![Live Proxy Updater](https://github.com/tuanminpay/live-proxy/workflows/Live%20Proxy%20Updater/badge.svg)](https://github.com/tuanminpay/live-proxy/actions?query=workflow:\"Live+Proxy+Updater\")" >> README.md
           echo -e "  ![GitHub repo size](https://img.shields.io/github/repo-size/tuanminpay/live-proxy)" >> README.md
-          echo -e "  [![GitHub commit activity](https://img.shields.io/github/commit-activity/m/tuanminpay/live-proxy?logo=commits)](https://github.com/tuanminpay/live-proxy/commits/main)" >> README.md
+          echo -e "  [![GitHub commit activity](https://img.shields.io/github/commit-activity/m/tuanminpay/live-proxy?logo=commits)](https://github.com/tuanminpay/live-proxy/commits/master)" >> README.md
 
           echo -e "\n  This is a repository I created to make it easier for me and possibly for you to find a proxy.\n" >> README.md
           echo -e "\n</div>\n" >> README.md

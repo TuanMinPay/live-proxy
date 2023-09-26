@@ -8,7 +8,7 @@
 
   [![Live Proxy Updater](https://github.com/tuanminpay/live-proxy/workflows/Live%20Proxy%20Updater/badge.svg)](https://github.com/tuanminpay/live-proxy/actions?query=workflow:"Live+Proxy+Updater")
   ![GitHub repo size](https://img.shields.io/github/repo-size/tuanminpay/live-proxy)
-  [![GitHub commit activity](https://img.shields.io/github/commit-activity/m/tuanminpay/live-proxy?logo=commits)](https://github.com/tuanminpay/live-proxy/commits/main)
+  [![GitHub commit activity](https://img.shields.io/github/commit-activity/m/tuanminpay/live-proxy?logo=commits)](https://github.com/tuanminpay/live-proxy/commits/master)
 
   This is a repository I created to make it easier for me and possibly for you to find a proxy.
 
