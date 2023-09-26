@@ -23,19 +23,19 @@
   Copy and paste one of the codes below into the terminal.
   - **ALL** (20295)
     ```bash
-    curl https://raw.githubusercontent.com/tuanminpay/live-proxy/main/all.txt -o all.txt
+    curl https://raw.githubusercontent.com/tuanminpay/live-proxy/master/all.txt -o all.txt
     ```
   - **HTTP** (7991)
     ```bash
-    curl https://raw.githubusercontent.com/tuanminpay/live-proxy/main/http.txt -o http.txt
+    curl https://raw.githubusercontent.com/tuanminpay/live-proxy/master/http.txt -o http.txt
     ```
   - **SOCKS4** (6496)
     ```bash
-    curl https://raw.githubusercontent.com/tuanminpay/live-proxy/main/socks4.txt -o socks4.txt
+    curl https://raw.githubusercontent.com/tuanminpay/live-proxy/master/socks4.txt -o socks4.txt
     ```
   - **SOCKS5** (5808)
     ```bash
-    curl https://raw.githubusercontent.com/tuanminpay/live-proxy/main/socks5.txt -o socks5.txt
+    curl https://raw.githubusercontent.com/tuanminpay/live-proxy/master/socks5.txt -o socks5.txt
     ```
 
 #### Note

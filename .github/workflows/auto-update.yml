@@ -52,7 +52,7 @@ jobs:
           do
             echo -e "  - **$(echo $file | cut -d'.' -f1 | tr 'a-z' 'A-Z')** ($(cat $file | wc -l))" >> README.md
             echo -e "    \`\`\`bash" >> README.md
-            echo -e "    curl https://raw.githubusercontent.com/tuanminpay/live-proxy/main/$file -o $file" >> README.md
+            echo -e "    curl https://raw.githubusercontent.com/tuanminpay/live-proxy/master/$file -o $file" >> README.md
             echo -e "    \`\`\`" >> README.md
           done
 

@@ -94,7 +94,7 @@ const github_raw = async function* () {
     for (let folder of ["proxies", "proxies_anonymous"]) {
       for (let type of ["http", "socks4", "socks5"]) {
         req = await axios_get(
-          `https://raw.githubusercontent.com/monosans/proxy-list/main/${folder}/${type}.txt`
+          `https://raw.githubusercontent.com/monosans/proxy-list/master/${folder}/${type}.txt`
         );
         yield extract_proxy_list(req.data, type);
       }
