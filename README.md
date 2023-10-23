@@ -16,24 +16,24 @@
 </div>
 
 ---
-  - **Total proxy:** ±20737
-  - **Last update:** Mon, 23 Oct 23 10:02:12 WIB
+  - **Total proxy:** ±21125
+  - **Last update:** Mon, 23 Oct 23 11:01:59 WIB
 
 #### Download
   Copy and paste one of the codes below into the terminal.
-  - **ALL** (20737)
+  - **ALL** (21125)
     ```bash
     curl https://raw.githubusercontent.com/tuanminpay/live-proxy/master/all.txt -o all.txt
     ```
-  - **HTTP** (7961)
+  - **HTTP** (7813)
     ```bash
     curl https://raw.githubusercontent.com/tuanminpay/live-proxy/master/http.txt -o http.txt
     ```
-  - **SOCKS4** (6694)
+  - **SOCKS4** (6978)
     ```bash
     curl https://raw.githubusercontent.com/tuanminpay/live-proxy/master/socks4.txt -o socks4.txt
     ```
-  - **SOCKS5** (6082)
+  - **SOCKS5** (6334)
     ```bash
     curl https://raw.githubusercontent.com/tuanminpay/live-proxy/master/socks5.txt -o socks5.txt
     ```
