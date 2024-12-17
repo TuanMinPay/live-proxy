@@ -81,8 +81,15 @@ const proxyscan = async function* () {
 
 const github_raw = async function* () {
   for (let type of ["http", "https", "socks4", "socks5"]) {
+    if (type !== "http") {
+      let req = await axios.get(
+        `https://raw.githubusercontent.com/r00tee/Proxy-List/main/${type}.txt`
+      );
+      yield extract_proxy_list(req.data, type);
+    }
+
     let req = await axios.get(
-      `https://raw.githubusercontent.com/ShiftyTR/Proxy-List/master/${type}.txt`
+      `https://raw.githubusercontent.com/zloi-user/hideip.me/main/${type}.txt`
     );
     yield extract_proxy_list(req.data, type);
 
@@ -423,7 +430,7 @@ const main = async () => {
   const outs = { all: fs.createWriteStream(`${PATH}/all.txt`) };
   for (let raw_provider of [
     spysone,
-    proxy_daily,
+    // proxy_daily,
     my_proxy,
     iplocation,
     proxylist_org,
@@ -433,7 +440,7 @@ const main = async () => {
     us_proxy,
     sslproxies,
     proxyscrape,
-    scrapingant,
+    // scrapingant,
     github_raw,
     socks_proxy_net,
     free_proxy_list,
