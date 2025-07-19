@@ -40,3 +40,6 @@
 
 #### Note
 Don't forget to give ⭐ and also fork and follow 🥰.
+
+## Star History
+[![Star History Chart](https://api.star-history.com/svg?repos=tuanminpay/live-proxy&type=Date)](https://www.star-history.com/#tuanminpay/live-proxy&Date)
