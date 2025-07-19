@@ -59,6 +59,9 @@ jobs:
           echo -e "\n#### Note" >> README.md
           echo -e "Don't forget to give ⭐ and also fork and follow 🥰." >> README.md
 
+          echo -e "\n\n## Star History" >> README.md
+          echo -e "\n[![Star History Chart](https://api.star-history.com/svg?repos=tuanminpay/live-proxy&type=Date)](https://www.star-history.com/#tuanminpay/live-proxy&Date)" >> README.md
+
       - name: start commit
         run: |
           git config --local user.name ${{ secrets.name }}
