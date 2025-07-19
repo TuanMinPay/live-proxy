@@ -16,24 +16,24 @@
 </div>
 
 ---
-  - **Total proxy:** ±155440
-  - **Last update:** Sat, 19 Jul 25 14:02:53 WIB
+  - **Total proxy:** ±161373
+  - **Last update:** Sat, 19 Jul 25 14:55:34 WIB
 
 #### Download
   Copy and paste one of the codes below into the terminal.
-  - **ALL** (155440)
+  - **ALL** (161373)
     ```bash
     curl https://raw.githubusercontent.com/tuanminpay/live-proxy/master/all.txt -o all.txt
     ```
-  - **HTTP** (68456)
+  - **HTTP** (68542)
     ```bash
     curl https://raw.githubusercontent.com/tuanminpay/live-proxy/master/http.txt -o http.txt
     ```
-  - **SOCKS4** (51542)
+  - **SOCKS4** (51794)
     ```bash
     curl https://raw.githubusercontent.com/tuanminpay/live-proxy/master/socks4.txt -o socks4.txt
     ```
-  - **SOCKS5** (35442)
+  - **SOCKS5** (41037)
     ```bash
     curl https://raw.githubusercontent.com/tuanminpay/live-proxy/master/socks5.txt -o socks5.txt
     ```
@@ -41,5 +41,7 @@
 #### Note
 Don't forget to give ⭐ and also fork and follow 🥰.
 
+
 ## Star History
+
 [![Star History Chart](https://api.star-history.com/svg?repos=tuanminpay/live-proxy&type=Date)](https://www.star-history.com/#tuanminpay/live-proxy&Date)
