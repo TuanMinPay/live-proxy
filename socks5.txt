@@ -7,7 +7,7 @@ Visit <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode
 <span class="md:block w-full truncate">You</span>
 <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_500&#38;utm_campaign=api.proxyscrape.com" target="_blank" rel="noopener noreferrer">
 <span class="cf-icon-cloud block md:hidden h-20 bg-center bg-no-repeat"></span>
-<span class="md:block w-full truncate">Chicago</span>
+<span class="md:block w-full truncate">Ashburn</span>
 <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_500&utm_campaign=api.proxyscrape.com" target="_blank" rel="noopener noreferrer">
 <span class="cf-icon-server block md:hidden h-20 bg-center bg-no-repeat"></span>
 <span class="md:block w-full truncate">api.proxyscrape.com</span>
