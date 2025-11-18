@@ -17,7 +17,7 @@
 
 ---
   - **Total proxy:** ±286
-  - **Last update:** Tue, 18 Nov 25 19:02:22 WIB
+  - **Last update:** Tue, 18 Nov 25 20:10:38 WIB
 
 #### Download
   Copy and paste one of the codes below into the terminal.
